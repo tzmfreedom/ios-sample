@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Swift",
+    "codes": [
+      {
+        "name": "Variable",
+        "code": "let a = 1\nvar b = 2"
+      },
+      {
+        "name": "Loop",
+        "code": "for item in items {}"
+      },
+      {
+        "name": "Condition",
+        "code": "if true { } else {}"
+      }
+    ]
+  },
+  {
+    "name": "Ruby",
+    "codes": [
+      {
+        "name": "Variable",
+        "code": "a = 1"
+      },
+      {
+        "name": "Loop",
+        "code": "3.times { |i| }\n[1,2,3].each { |i| }"
+      },
+      {
+        "name": "Condition",
+        "code": "if true\n// code\nend"
+      }
+    ]
+  },
+  {
+    "name": "Go",
+    "codes": [
+      {
+        "name": "Variable",
+        "code": "var a int\na := 3"
+      },
+      {
+        "name": "Loop",
+        "code": "for i, item := range items {\n  //code\n}"
+      },
+      {
+        "name": "Condition",
+        "code": "if true { } else {}"
+      }
+    ]
+  }
+]

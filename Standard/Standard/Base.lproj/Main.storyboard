@@ -113,10 +113,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzC-rk-Bum">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKY-mZ-1HT">
-                                                    <rect key="frame" x="302" y="50" width="96" height="25"/>
+                                                    <rect key="frame" x="310" y="50" width="96" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="96" id="Lms-Fm-3by"/>
                                                         <constraint firstAttribute="height" constant="25" id="xse-nP-3sL"/>
@@ -127,7 +127,7 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE SELECT A LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqE-p1-YIP">
-                                                    <rect key="frame" x="8" y="24" width="382" height="21"/>
+                                                    <rect key="frame" x="8" y="24" width="390" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Wem-w4-6Xy"/>
                                                     </constraints>
@@ -136,7 +136,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPLORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N39-us-1fE">
-                                                    <rect key="frame" x="8" y="45" width="286" height="37"/>
+                                                    <rect key="frame" x="8" y="45" width="294" height="37"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="37" id="PWB-b6-9Su"/>
                                                     </constraints>
@@ -145,7 +145,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NS9-uC-qAy">
-                                                    <rect key="frame" x="8" y="89" width="390" height="1"/>
+                                                    <rect key="frame" x="8" y="89" width="398" height="1"/>
                                                     <color key="backgroundColor" name="LetsEat Light Grey"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="SuK-JI-5Ur"/>
@@ -424,7 +424,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="ykS-DS-PZV">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="restaurantCell" id="ykS-DS-PZV" customClass="RestaurantCell" customModule="Standard" customModuleProvider="target">
                                         <rect key="frame" x="19.5" y="0.0" width="375" height="312"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ui0-ar-4R9">
@@ -536,6 +536,9 @@
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="imgRestaurant" destination="reJ-OQ-9Ot" id="0sa-Gg-etT"/>
+                                            <outlet property="lblCuisine" destination="uK4-lf-f48" id="kDu-h1-aTw"/>
+                                            <outlet property="lblTitle" destination="Jyg-FK-6xo" id="AcQ-Bb-WkG"/>
                                             <segue destination="ROr-FF-rAs" kind="show" id="8Fs-9M-EDl"/>
                                         </connections>
                                     </collectionViewCell>
