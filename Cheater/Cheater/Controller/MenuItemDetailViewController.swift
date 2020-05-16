@@ -31,18 +31,18 @@ class MenuItemDetailViewController: UIViewController {
 
         let highlightr = Highlightr()
         highlightr?.setTheme(to: theme)
-        // You can omit the second parameter to use automatic language detection.
         let highlightedCode = highlightr?.highlight(code, as: lang)
-
         let textView = UITextView(
             frame: CGRect(
-                x: 10,
+                x: 0,
                 y: 50,
                 width: self.view.frame.width,
                 height: self.view.frame.height
             )
         )
+        textView.backgroundColor = .black
         textView.attributedText = highlightedCode
+        textView.font = UIFont.systemFont(ofSize: 20)
         view.backgroundColor = .white
         view.addSubview(textView)
     }

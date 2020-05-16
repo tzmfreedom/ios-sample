@@ -61,7 +61,7 @@ extension ListViewController : UITableViewDataSource, UITableViewDelegate {
 #if DEBUG
 import SwiftUI
 
-struct ListViewRepresentable2: UIViewRepresentable {
+struct ListViewRepresentable: UIViewRepresentable {
     func makeUIView(context: Context) -> UIView {
         return UINavigationController(
             rootViewController: ListViewController()
@@ -74,9 +74,14 @@ struct ListViewRepresentable2: UIViewRepresentable {
     }
 }
 
-struct ListViewControllerPreviews2: PreviewProvider {
+class ListViewControllerPreviews: PreviewProvider {
     static var previews: some View {
-        return ListViewRepresentable2()
+        return ListViewRepresentable()
+    }
+
+    @objc class func injected() {
+        UIApplication.shared.windows.first?.rootViewController =
+                UIHostingController(rootView: ListViewRepresentable())
     }
 }
 #endif

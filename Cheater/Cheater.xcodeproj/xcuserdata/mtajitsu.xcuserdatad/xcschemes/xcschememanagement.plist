@@ -12,7 +12,7 @@
 		<key>StandardUIKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<false />
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -22,7 +22,7 @@
 		<key>680CBF2D24643D1C006C7869</key>
 		<dict>
 			<key>primary</key>
-			<true/>
+			<true />
 		</dict>
 	</dict>
 </dict>
